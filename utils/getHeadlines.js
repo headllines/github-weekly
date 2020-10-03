@@ -3,7 +3,7 @@ const axios = require('axios');
 const getHeadlines = async () => {
   console.log('start fetching headlines')
   try {
-    const res = await axios.get(`https://ghapi.huchen.dev/repositories?&since=daily`);
+    const res = await axios.get(`https://ghapi.huchen.dev/repositories?&since=weekly`);
     const top10Objs = res.data.slice(0, 10);
     // console.log(top10Objs)
     const contents = top10Objs
@@ -11,7 +11,7 @@ const getHeadlines = async () => {
         let { author, name, url, description, stars, forks, currentPeriodStars, language} = obj;
 
         return `${i + 1}. [**${author}/${name}**: ${description}](${url})
-${currentPeriodStars} stars today | ${stars} stars | ${forks} forks ${language ? '| ' + language : ''}
+${currentPeriodStars} stars this week | ${stars} stars | ${forks} forks ${language ? '| ' + language : ''}
 
 `;
       }).join('');

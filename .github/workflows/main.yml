@@ -1,8 +1,8 @@
-name: github-daily-top
+name: github-weekly-top
 
 on:
   schedule:
-  - cron: "1 0 * * *"
+  - cron: "1 0 * * 1"
 
 jobs:
   fetch-top-posts:
