@@ -50,5 +50,5 @@ We at [headllines.com](https://headllines.com) build open source headline collec
 - [leadream](https://github.com/leadream)
 
 
-  > Updated at Mon Nov 07 2022 00:51:12 GMT+0000 (Coordinated Universal Time)
+  > Updated at Mon Nov 14 2022 00:47:01 GMT+0000 (Coordinated Universal Time)
   
